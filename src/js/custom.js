@@ -8,8 +8,6 @@ $(document).ready(function() {
 
 		//= ./common/likely.js
 		//= ./common/owl.carousel.min.js
-		//= ./common/blueimp-gallery.js
-		//= ./common/blueimp-gallery-fullscreen.js
 
 
 
@@ -18,7 +16,11 @@ $(document).ready(function() {
 			center: true,
 			items:1,
 			loop:true,
-			margin:100
+			autoplay:3000,
+			margin:100,
+			autoplaySpeed:1000,
+			navSpeed: 1000,
+			dotsSpeed: 1000,
 	});
 
 	$('.about').owlCarousel({
