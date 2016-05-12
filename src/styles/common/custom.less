@@ -7,7 +7,8 @@ img {
 }
 
 .inner {
-	padding: 7em 0;
+	padding-top: 7em;
+	padding-bottom: 7em;
 }
 
 footer {
@@ -167,16 +168,58 @@ footer p{
 }
 
 .buttonboxback:hover {
-    background-color: @link-hover-color;
+    background-color: @gray-dark;
 }
 
 .buttonboxback:hover:before {
-    border-left-color: @link-hover-color;
+    border-left-color: @gray-dark;
 }
 
 
+.social {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	background-image: url(../../img/svg/social.svg);
+	background-size: 63px;
+	background-repeat: no-repeat;
+	cursor: pointer;
 
+	&_vk {
+		background-position-x: -42px;
+		&:hover {
+			background-position-y: -21px;
+		}
+	}
 
+	&_fb {
+		background-position-x: 0;
+		&:hover {
+			background-position-y: -21px;
+		}
+	}
+
+	&_tw {
+		background-position-x: -21px;
+		&:hover {
+			background-position-y: -21px;
+		}
+	}
+
+	&_tr {
+		background-position-x: -63px;
+		&:hover {
+			background-position-y: -21px;
+		}
+	}
+
+	&-list {
+		padding-left: 0;
+		list-style: none;
+		margin-top: 35px;
+	}
+}
 
 
 

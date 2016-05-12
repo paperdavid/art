@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	$('.loop').owlCarousel({
 			center: true,
-			items:3,
+			items:1,
 			loop:true,
 			margin:100
 	});
