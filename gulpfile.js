@@ -81,7 +81,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    tunnel: false,
     host: 'localhost',
     port: 9000,
     injectChanges: true,
@@ -247,8 +247,6 @@ gulp.task('build', function(callback) {
         'js',
         'less',
         'images',
-        'png-sprite',
-        'svg-sprite',
         'svg',
         'fonts',
         callback)
