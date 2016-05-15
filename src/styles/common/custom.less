@@ -12,11 +12,32 @@ img {
 }
 
 footer {
+	color: @text-color-gray;
+	margin-top: 2em;
 
 		@media (max-width: @screen-xs) {
 			margin-top: 3em;
 		}
 }
+
+a.link--footer{
+  color: @text-color-gray;
+  border-bottom: 1px solid @black-underline;
+  text-decoration: none;
+  padding-bottom: 1px;
+
+  &:hover,
+  &:focus {
+    color: @text-color;
+    border-bottom: 1px solid @text-color;
+  }
+
+  &:focus {
+    .tab-focus();
+  }
+
+}
+
 
 
 .news {
@@ -46,7 +67,7 @@ body {
 
 footer p{
 
-	font-size: 16px;
+	font-size: 15px;
 
 	@media (max-width: @screen-sm) {
 		font-size: 9px;
@@ -138,24 +159,12 @@ footer p{
 .buttonboxback {
 		display: inline-block;
     width: 150px;
-    height: 36px;
-    margin-left: -4px;
-    background-color: black;
+    height: 35px;
+    margin-left: -5px;
+    background-color: @text-color;
     position: relative;
-    border-radius: 5px;
-    border-top-left-radius: 0;
-		border-bottom-left-radius: 0;
     vertical-align: middle;
-}
-
-.buttonboxback:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -33px;
-    border-style: solid;
-    border-width: 18px;
-    border-color: transparent transparent transparent black;
+    border: 1px solid transparent;
 }
 
 .buttonboxback > a {
@@ -164,16 +173,18 @@ footer p{
     text-align: center;
     color: #fff;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 33px;
+
+    &:hover {
+    	color: @text-color;
+    }
 }
 
 .buttonboxback:hover {
-    background-color: @gray-dark;
+    border-color: @text-color;
+    background-color: transparent;
 }
 
-.buttonboxback:hover:before {
-    border-left-color: @gray-dark;
-}
 
 
 .social {
@@ -182,7 +193,7 @@ footer p{
 	height: 20px;
 	margin-right: 5px;
 	background-image: url(../../img/svg/social.svg);
-	background-size: 63px;
+	background-size: 104px;
 	background-repeat: no-repeat;
 	cursor: pointer;
 
@@ -200,14 +211,21 @@ footer p{
 		}
 	}
 
-	&_tw {
+	&_in {
 		background-position-x: -21px;
 		&:hover {
 			background-position-y: -21px;
 		}
 	}
 
-	&_tr {
+	&_pi {
+		background-position-x: -84px;
+		&:hover {
+			background-position-y: -21px;
+		}
+	}
+
+	&_tw {
 		background-position-x: -63px;
 		&:hover {
 			background-position-y: -21px;
@@ -222,4 +240,6 @@ footer p{
 }
 
 
-
+.language > li {
+	margin-right: 15px;
+}

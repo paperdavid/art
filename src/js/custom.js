@@ -8,9 +8,10 @@ $(document).ready(function() {
 
 		//= ./common/likely.js
 		//= ./common/owl.carousel.min.js
+		//= ./common/jquery.chocolate.js
 
 
-
+ $('.chocolat-parent').Chocolat();
 
 	$('.loop').owlCarousel({
 			center: true,
