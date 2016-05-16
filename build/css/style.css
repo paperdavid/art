@@ -336,6 +336,7 @@
 .loop .owl-item img
 {
     width: 100%;
+    height: 550px;
 }
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html
@@ -4902,7 +4903,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 .navbar-brand
 {
-    font-size: 30px;
+    font-size: 23px;
     line-height: 36px;
 
     float: left;
@@ -5016,7 +5017,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 .navbar-nav > li
 {
-    margin-right: 30px;
+    margin-right: 22px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -8431,14 +8432,12 @@ img
 }
 .inner
 {
-    padding-top: 7em;
-    padding-bottom: 7em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 footer
 {
     margin-top: 2em;
-
-    color: #555;
 }
 @media (max-width: 480px)
 {
@@ -8446,27 +8445,6 @@ footer
     {
         margin-top: 3em;
     }
-}
-a.link--footer
-{
-    padding-bottom: 1px;
-
-    text-decoration: none;
-
-    color: #555;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-}
-a.link--footer:hover,
-a.link--footer:focus
-{
-    color: #111;
-    border-bottom: 1px solid #111;
-}
-a.link--footer:focus
-{
-    outline: thin dotted;
-    outline: 5px auto -webkit-focus-ring-color;
-    outline-offset: -2px;
 }
 .news
 {
