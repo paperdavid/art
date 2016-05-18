@@ -976,7 +976,7 @@ p
 small,
 .small
 {
-    font-size: 86%;
+    font-size: 73%;
 }
 mark,
 .mark
@@ -2790,7 +2790,7 @@ input[type='search']
     .input-group-sm input[type='datetime-local'],
     .input-group-sm input[type='month']
     {
-        line-height: 31px;
+        line-height: 28px;
     }
     input[type='date'].input-lg,
     input[type='time'].input-lg,
@@ -2903,19 +2903,19 @@ fieldset[disabled] .checkbox label
 }
 .input-sm
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
-    height: 31px;
+    height: 28px;
     padding: 5px 10px;
 
     border-radius: 3px;
 }
 select.input-sm
 {
-    line-height: 31px;
+    line-height: 28px;
 
-    height: 31px;
+    height: 28px;
 }
 textarea.input-sm,
 select[multiple].input-sm
@@ -2924,19 +2924,19 @@ select[multiple].input-sm
 }
 .form-group-sm .form-control
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
-    height: 31px;
+    height: 28px;
     padding: 5px 10px;
 
     border-radius: 3px;
 }
 .form-group-sm select.form-control
 {
-    line-height: 31px;
+    line-height: 28px;
 
-    height: 31px;
+    height: 28px;
 }
 .form-group-sm textarea.form-control,
 .form-group-sm select[multiple].form-control
@@ -2945,11 +2945,11 @@ select[multiple].input-sm
 }
 .form-group-sm .form-control-static
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
-    height: 31px;
-    min-height: 34px;
+    height: 28px;
+    min-height: 32px;
     padding: 6px 10px;
 }
 .input-lg
@@ -3041,10 +3041,10 @@ select[multiple].input-lg
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback
 {
-    line-height: 31px;
+    line-height: 28px;
 
-    width: 31px;
-    height: 31px;
+    width: 28px;
+    height: 28px;
 }
 .has-success .help-block,
 .has-success .control-label,
@@ -3277,7 +3277,7 @@ select[multiple].input-lg
 {
     .form-horizontal .form-group-sm .control-label
     {
-        font-size: 13px;
+        font-size: 11px;
 
         padding-top: 6px;
     }
@@ -3807,7 +3807,7 @@ fieldset[disabled] .btn-link:focus
 .btn-sm,
 .btn-group-sm > .btn
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
     padding: 5px 10px;
@@ -3817,7 +3817,7 @@ fieldset[disabled] .btn-link:focus
 .btn-xs,
 .btn-group-xs > .btn
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
     padding: 1px 5px;
@@ -4016,7 +4016,7 @@ tbody.collapse.in
 }
 .dropdown-header
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.42857143;
 
     display: block;
@@ -4348,10 +4348,10 @@ select[multiple].input-group-lg > .input-group-btn > .btn
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
-    height: 31px;
+    height: 28px;
     padding: 5px 10px;
 
     border-radius: 3px;
@@ -4360,9 +4360,9 @@ select.input-group-sm > .form-control,
 select.input-group-sm > .input-group-addon,
 select.input-group-sm > .input-group-btn > .btn
 {
-    line-height: 31px;
+    line-height: 28px;
 
-    height: 31px;
+    height: 28px;
 }
 textarea.input-group-sm > .form-control,
 textarea.input-group-sm > .input-group-addon,
@@ -4410,7 +4410,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 .input-group-addon.input-sm
 {
-    font-size: 13px;
+    font-size: 11px;
 
     padding: 5px 10px;
 
@@ -5200,8 +5200,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 }
 .navbar-btn.btn-sm
 {
-    margin-top: 14.5px;
-    margin-bottom: 14.5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .navbar-btn.btn-xs
 {
@@ -5540,7 +5540,7 @@ fieldset[disabled] .navbar-default .btn-link:focus
 .pagination-sm > li > a,
 .pagination-sm > li > span
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 
     padding: 5px 10px;
@@ -5698,7 +5698,7 @@ a.label:focus
 }
 .badge
 {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     line-height: 1;
 
@@ -5979,7 +5979,7 @@ a.thumbnail.active
 }
 .progress-bar
 {
-    font-size: 13px;
+    font-size: 11px;
     line-height: 21px;
 
     float: left;
@@ -7032,7 +7032,7 @@ button.close
 .tooltip
 {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: normal;
     font-style: normal;
     line-height: 1.42857143;
@@ -7586,10 +7586,9 @@ button.close
     cursor: pointer;
     text-indent: -999px;
 
-    border: 1px solid #fff;
     border-radius: 10px;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #ccc;
 }
 .carousel-indicators .active
 {
@@ -7597,7 +7596,7 @@ button.close
     height: 12px;
     margin: 0;
 
-    background-color: #fff;
+    background-color: #f2f2f2;
 }
 .carousel-caption
 {
@@ -8435,6 +8434,10 @@ img
     padding-top: 5em;
     padding-bottom: 5em;
 }
+.inner__top
+{
+    padding-top: 3em;
+}
 footer
 {
     margin-top: 2em;
@@ -8554,7 +8557,7 @@ footer p
 {
     cursor: default;
 
-    color: #b33;
+    color: #111;
     border: none;
 }
 .list__line
@@ -8579,7 +8582,7 @@ footer p
 }
 .margin
 {
-    margin: 2em 0 0;
+    margin-top: 1em;
 }
 .margin__lg
 {
@@ -8606,9 +8609,10 @@ footer p
 
     display: inline-block;
 
-    width: 150px;
+    width: auto;
     height: 35px;
     margin-left: -5px;
+    padding: 0 10px;
 
     vertical-align: middle;
 
@@ -8692,7 +8696,6 @@ footer p
 }
 .social-list
 {
-    margin-top: 35px;
     padding-left: 0;
 
     list-style: none;
@@ -8700,6 +8703,88 @@ footer p
 .language > li
 {
     margin-right: 15px;
+}
+.carousel-fade .carousel-inner .item
+{
+    -webkit-transition-property: opacity;
+            transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right
+{
+    opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right
+{
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right
+{
+    left: 0;
+
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control
+{
+    z-index: 2;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item
+{
+    height: 100%;
+}
+.arrow-left
+{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+.arrow-right
+{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+.carousel-info
+{
+    color: #000;
+}
+.carousel-inner > .item > img
+{
+    height: 550px;
+}
+.carousel-inner
+{
+    overflow: visible;
+}
+.carousel-caption
+{
+    bottom: -80px;
+
+    color: #111;
+    text-shadow: none;
+}
+.exhibition-item__grid__cell
+{
+    margin-bottom: 1em;
+}
+.exhibition-item__grid__cell__img img
+{
+    height: 192px;
+}
+.exhibition-item__grid__cell__img img:hover
+{
+    opacity: .5;
 }
 .chocolat-zoomable.chocolat-zoomed .chocolat-img
 {

@@ -11,7 +11,7 @@ $(document).ready(function() {
 		//= ./common/jquery.chocolate.js
 
 
- $('.chocolat-parent').Chocolat();
+ $('.carousel').carousel();
 
 	$('.loop').owlCarousel({
 			center: true,

@@ -9,6 +9,10 @@ img {
 .inner {
 	padding-top: 5em;
 	padding-bottom: 5em;
+
+	&__top {
+		padding-top: 3em;
+	}
 }
 
 footer {
@@ -103,7 +107,7 @@ footer p{
 			margin-bottom: 10px;
 
 				&.active > a {
-					color: @brand-danger;
+					color: @text-color;
 					border: none;
 					cursor: default;
 				}
@@ -131,7 +135,7 @@ footer p{
 
 
 .margin {
-	margin: 2em 0 0;
+	margin-top: 1em;
 
 	&__lg {
 		margin-top: 6em;
@@ -157,9 +161,10 @@ footer p{
 
 .buttonboxback {
 		display: inline-block;
-    width: 150px;
+    width: auto;
     height: 35px;
     margin-left: -5px;
+    padding: 0 10px;
     background-color: @text-color;
     position: relative;
     vertical-align: middle;
@@ -234,7 +239,6 @@ footer p{
 	&-list {
 		padding-left: 0;
 		list-style: none;
-		margin-top: 35px;
 	}
 }
 
@@ -242,3 +246,104 @@ footer p{
 .language > li {
 	margin-right: 15px;
 }
+
+// CAROUSEL
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+
+
+
+html, 
+body, 
+.carousel, 
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
+}
+
+
+.arrow-left {
+	top: 50%;
+	position: absolute;
+	left: 20%;
+}
+
+.arrow-right {
+	top: 50%;
+	position: absolute;
+	right: 20%;
+}
+
+.carousel-info {
+
+	color: #000;
+}
+
+.carousel-inner >.item >img {
+	height: 550px;
+}
+
+
+.carousel-inner {
+	overflow: visible;
+}
+
+.carousel-caption {
+	bottom: -80px;
+	color: @text-color;
+	text-shadow: none;
+}
+
+
+.exhibition-item {
+
+	&__grid {
+
+		&__cell {
+			margin-bottom: 1em;
+
+			&__img img{
+				height: 192px;
+
+				&:hover {
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+

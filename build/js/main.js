@@ -14362,7 +14362,7 @@ $(document).ready(function() {
 		}));
 
 
- $('.chocolat-parent').Chocolat();
+ $('.carousel').carousel();
 
 	$('.loop').owlCarousel({
 			center: true,
