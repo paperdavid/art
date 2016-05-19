@@ -43,12 +43,6 @@ footer {
 
 
 
-.news {
-	background-color: @brand-info;
-	padding: 6em 0;
-
-}
-
 .navbar-brand img {
 	display: inline-block;
 }
@@ -150,43 +144,8 @@ footer p{
 	}
 
 	&__bottom {
-		margin-bottom: 2em;
+		margin-bottom: 5em;
 	}
-}
-
-
-
-
-
-
-.buttonboxback {
-		display: inline-block;
-    width: auto;
-    height: 35px;
-    margin-left: -5px;
-    padding: 0 10px;
-    background-color: @text-color;
-    position: relative;
-    vertical-align: middle;
-    border: 1px solid transparent;
-}
-
-.buttonboxback > a {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    line-height: 33px;
-
-    &:hover {
-    	color: @text-color;
-    }
-}
-
-.buttonboxback:hover {
-    border-color: @text-color;
-    background-color: transparent;
 }
 
 
@@ -330,6 +289,11 @@ body,
 
 		&__cell {
 			margin-bottom: 1em;
+			height: 270px;
+
+			& > a > p {
+				margin-top: .5em;
+			}
 
 			&__img img{
 				height: 192px;
@@ -341,6 +305,73 @@ body,
 		}
 	}
 }
+
+.info {
+
+	&__exhibitions {
+		top: 8%;
+	}
+}
+
+
+.button {
+
+	&__email {
+		margin-left: -5px;
+	}
+}
+
+
+
+.news {
+
+	&__item {
+		margin-bottom: 5em;
+
+		&__img {
+		}
+
+
+		&__name {
+			margin-top: 4px;
+		}
+
+		&__text {
+			margin-top: 0;
+		}
+	}
+}
+
+.team__member {
+
+	height: 350px;
+	margin-bottom: 2em;
+
+	& img {
+		margin-bottom: 1em;
+	}
+
+	& .h5 {
+		margin-bottom: .5em;
+		font-weight: bold;
+	}
+}
+
+
+.partner {
+	height: 240px;
+	margin-bottom: 1em;
+	& p {
+		margin-bottom: 0;
+	}
+}
+
+
+
+
+
+
+
 
 
 

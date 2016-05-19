@@ -14,12 +14,12 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 63.5%); // #eee
 
-@gray:                  #f5f6f7;//
-@brand-primary:         #1c69a9;//blue
+@gray:                  #f5f6f7;
+@brand-primary:         #1c69a9;
 @brand-success:         #339933;
-@brand-info:            #f5f6f7;//gray
-@brand-warning:         #f9f5e4;//beige
-@brand-danger:          #bb3333;//red
+@brand-info:            #f5f6f7;
+@brand-warning:         #f9f5e4;
+@brand-danger:          #bb3333;
 
 @black-underline:                 fadeout(#000000, 80%);
 @white-underline:                 fadeout(#ffffff, 50%);
@@ -72,7 +72,7 @@
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-@line-height-base:        1.428571429; // 20/14
+@line-height-base:        1.618; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
@@ -116,7 +116,7 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        2px;
+@border-radius-base:        0;
 @border-radius-large:       50px;
 @border-radius-small:       3px;
 
@@ -158,9 +158,9 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              #fff;
+@btn-default-bg:                 #000;
+@btn-default-border:             @btn-default-bg;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;

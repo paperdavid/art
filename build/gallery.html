@@ -62,7 +62,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
-    <body>
+    <body data-spy="scroll" data-target="#navbar-gallery">
 
         <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -112,28 +112,82 @@
 </header><!-- /.header -->
 
         <main>
-        <div class="map">
+        <!-- <div class="map">
 	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=62SXGAVLGj_dFkcVvaYyN4RZe2EY2SbX&width=100%&height=300&lang=ru_RU&sourceType=constructor"></script>
-</div>
+</div> -->
 <div class="container">
 	<div class="row">
 
 		<div class="col-xs-12 col-sm-3">
-			<div class="info">
-				<p class="bold">Галерея:</p>
-				<ul class="list__pure">
-					<li class="active"><a class="link" href="#">Команда</a></li>
-					<li><a class="link" href="#">О галерее</a></li>
-					<li><a class="link" href="#">Режим работы</a></li>
-					<li><a class="link" href="#">Партнеры</a></li>
+			<div id="navbar-gallery" class="info" data-spy="affix" data-offset-top="0">
+				<ul class="list__pure nav nav-tabs" role="tablist">
+					<li class="active"><a href="#1">О галерее</a></li>
+					<li><a  href="#2">Команда</a></li>
+					<li><a href="#3">Контакты</a></li>
+					<li><a href="#4">Партнеры</a></li>
 				</ul>
 			</div>
 		</div>
 
-		<div class="col-xs-12 col-sm-9">
+		<div class="col-xs-12 col-sm-9 margin__bottom">
+			<div class="h3" id="1">О галерее</div>
+			<p>ART re.FLEX Gallery была основана в 2006 году коллекционером Федором и искусствоведом Ксенией Сердюками. В декабре 2016 года она отметит свое десятилетие. За время своего существования петербургская галерея успешно заявила о себе на арт-рынке.</p>
+			<p>Выставочная политика галереи выстроилась от сотрудничества с признанными классиками петербургского искусства (Вячеслав Михайлов, Константин Чмутин, Вадим Григорьев-Башун, Латиф Казбеков, Владимир Духовлинов и др.) к работе с состоявшимися представителями современной российской и западной арт-сцены (Дмитрий Жуков, Саша Фролова, Александр Морозов, Мария Арендт, Дарья Суровцева, Надя Кузнецова, Ларс Краммер, Андерс Шёнборг и др.), а также - с яркими перспективными молодыми художниками, вовлеченными в международный контекст актуального искусства (Вероника Рудьева-Рязанцева, дуэт SASHAPASHA, Mina Milk, Анна Биттерсол и др.).</p>
+			<p>Кураторами проектов галереи выступают известные российские и европейские специалисты в области визуальных искусств. Работы художников ART re.FLEX Gallery входят в списки отечественных и международных арт-премий, а также участвуют в выставках ведущих музеев (Государственный Русский Музей, Московский музей современного искусства). Галерея принимает участие в крупных культурных событиях Петербурга (ночь галерей, фестиваль медиаискусства «Киберфест», международный графический фестиваль «Бумфест»).</p>
+			<p>ART re.FLEX Gallery уделяет особое внимание работе с арт-институциями и ярмарками по всему миру (ArtHelsinki в Финляндии, Contemporary Istanbul в Турции, MIA&D в Сингапуре, Nord Art в Германии, фонд культуры и искусств Про Арте,). С 2014 года ART re.FLEX – партнер итальянской художественной премии Arte Laguna Prize, входит в состав жюри и является площадкой для победителей в номинации «Художник в галерее».</p>
+			<p>ART re.FLEX Gallery продолжает расширять круг своих партнеров в России и по всему миру.</p>
+		</div>
+		<div class="col-xs-12 col-sm-9 col-sm-offset-3 inner">
+			<div class="h3" id="2">Команда</div>
+			<div class="row">
+				
+				<div class="col-xs-12 col-sm-4">
+					<div class="team__member">
+						<img src="../../img/images/team/f-serdyuk.jpg" alt="">
+						<div class="h5">Федор Сердюк</div>
+						<p>Владелец, основатель галереи, Генеральный директор</p>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4">
+					<div class="team__member">
+						<img src="../../img/images/team/k-serdyuk.jpg" alt="">
+						<div class="h5">Ксения Сердюк</div>
+						<p>Владелица, основатель галереи</p>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4">
+					<div class="team__member">
+						<img src="../../img/images/team/sidorova.jpg" alt="">
+						<div class="h5">Любовь Сидорова</div>
+						<p>Исполнительный директор</p>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4">
+					<div class="team__member">
+						<img src="../../img/images/team/podoksik.jpg" alt="">
+						<div class="h5">Вера Подоксик</div>
+						<p>Арт-менеджер</p>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4">
+					<div class="team__member">
+						<img src="../../img/images/team/postnova.jpg" alt="">
+						<div class="h5">Мария Постнова</div>
+						<p>Арт-менеджер</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-9 col-sm-offset-3 inner">
 			<div class="row">
 				<div class="col-xs-12">
-					<h3>Контактная информация</h3>
+					<div class="h3" id="3">Контактная информация</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-8">
@@ -144,8 +198,7 @@
 				<div class="col-xs-12 col-sm-4 emerge" data-effect="relax" data-duration="500">
 					<div class="hours">
 						<div class="h4">Работаем</div>
-						<p>Будние: <span>9 — 21</span></p>
-						<p>Выходные: <span>10 — 20</span></p>
+						<p>Вторник – Суббота: <span>12 — 19</span></p>
 					</div>
 				</div>
 
@@ -157,15 +210,15 @@
 								<div class="h4 remain">Адрес</div>
 								<div itemscope itemtype="http://schema.org/Organization">
 									<div class="footer__item--address__info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-										<p><nobr><span itemprop="streetAddress">Коломяжский пр-т, д.&nbsp;27, лит&nbsp;А</span></nobr>
+										<p><nobr><span itemprop="streetAddress">проспект Бакунина, д.&nbsp;5</span></nobr>
 										<nobr><span itemprop="addressLocality">Санкт-Петербург, Россия,</span>
-										<span itemprop="postalCode">197341</span></nobr></p>
+										<span itemprop="postalCode">191024</span></nobr></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-xs-12 col-sm-4">
 								<div class="h4 remain">Метро</div>
-								<p>Ближайшие станции метро: </p>
+								<p>Ближайшие станции: </p>
 								<ul class="list__pure">
 									<li>«Пл. Восстания» (15 минут)</li>
 									<li>«Пл. Ал. Невского» (20 минут)</li>
@@ -174,8 +227,9 @@
 							<div class="col-xs-12 col-sm-4">
 								<div class="h4 remain">Наземный транспорт</div>
 								<ul class="list__pure">
-									<li>Маршрутное такси: № к-55</li>
-									<li>Автобус: № 127</li>
+									<li>Маршрутные такси № к-187, к-185</li>
+									<li>Автобусные маршруты № 27, 46</li>
+									<li>Троллейбусные маршруты № 1, 5</li>
 								</ul>
 							</div>
 						</div>
@@ -184,6 +238,60 @@
 
 			</div>
 		</div><!-- /col -->
+
+		<div class="col-xs-12 col-sm-9 col-sm-offset-3 inner">
+			<div class="h3" id="4">Партнеры</div>
+
+			<div class="row">
+
+				<div class="col-xs-6 col-sm-3">
+					<div class="partner">
+						<img src="../../img/images/partners/b5.jpg" alt="">
+						<p>Бизнес центр «Б5»</p>
+						<a class="link small" href="">Перейти на сайт</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="partner">
+						<img src="../../img/images/partners/w-hotels.jpg" alt="">
+						<p>Отель «W» St. Petersburg </p>
+						<a class="link small" href="">Перейти на сайт</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="partner">
+						<img src="../../img/images/partners/greys.jpg" alt="">
+						<p>Бистро «GREY'S»</p>
+						<a class="link small" href="">Перейти на сайт</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="partner">
+						<img src="../../img/images/partners/arteprize.jpg" alt="">
+						<p>Премия «Arte Laguna»</p>
+						<a class="link small" href="">Перейти на сайт</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="partner">
+						<img src="../../img/images/partners/art1.jpg" alt="">
+						<p>Онлайн-ресурс «ART 1 »</p>
+						<a class="link small" href="">Перейти на сайт</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3">
+					<div class="partner">
+						<img src="../../img/images/partners/pocket.png" alt="">
+						<p>«In Your Pocket: Guide»</p>
+						<a class="link small" href="">Перейти на сайт</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
 
 	</div><!-- /row -->
 </div><!-- /container -->
@@ -207,7 +315,7 @@
 	        <div class="form-group">
 	          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane@example.com">
 	        </div>
-	        <div class="buttonboxback"><a href="" type="submit">Подписаться</a></div>
+	        <button type="submit" class="btn btn-default button__email">Подписаться</button>
 	      </form>
 
 			</div>
@@ -238,64 +346,6 @@
 		</div><!-- /row -->
 	</div><!-- /container -->
 </footer><!-- /footer -->
-
-<!-- 
-<div class="container inner">
-  <div class="row">
-    <div class="col-xs-12 col-sm-2">
-      <ul class="list__pure">
-        <li><a href="">Дмитрий Жуков</a></li>
-        <li><a href="">Вероника Рудьева</a></li>
-        <li><a href="">Мина Милк</a></li>
-        <li><a href="">Наташа Белова-Вебер</a></li>
-        <li><a href="">Александр Морозов</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-2">
-      <ul class="list__pure">
-        <li><a href="">Саша Фролова</a></li>
-        <li><a href="">Андерс Шенберг</a></li>
-        <li><a href="">Катя Брыскина</a></li>
-        <li><a href="">Ларс Крамер</a></li>
-        <li><a href="">Мария Арендт</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-2">
-      <ul class="list__pure">
-        <li><a href="">SASHAPASHA</a></li>
-        <li><a href="">Александр Белов</a></li>
-        <li><a href="">Анна Биттерсол</a></li>
-        <li><a href="">Виктория Илюшкина</a></li>
-        <li><a href="">Дарья Суворовцева</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-2">
-      <ul class="list__pure">
-        <li><a href="">Елена Губанова</a></li>
-        <li><a href="">Игорь Харченко</a></li>
-        <li><a href="">Ингегерд Шенборг</a></li>
-        <li><a href="">Константин Чмутин</a></li>
-        <li><a href="">Латиф Казбеков</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-2">
-      <ul class="list__pure">
-        <li><a href="">Людмила Белова</a></li>
-        <li><a href="">Марина Колдобская</a></li>
-        <li><a href="">Мария Токаренко</a></li>
-        <li><a href="">Михаил Заиканов</a></li>
-        <li><a href="">Надя Кузнецова</a></li>
-      </ul>
-    </div>
-    <div class="col-xs-12 col-sm-2">
-      <ul class="list__pure">
-        <li><a href="">Татьяна Кроль</a></li>
-        <li><a href="">Юрий Штапаков</a></li>
-      </ul>
-    </div>
-
-  </div>
-</div> -->
 
 
 
