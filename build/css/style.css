@@ -826,9 +826,11 @@ h6,
 .h5,
 .h6
 {
-    font-family: 'ProximaNova', Georgia, Times, serif;
+    font-family: 'ProximaNova', Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.1;
+
+    text-transform: uppercase;
 
     color: inherit;
 }
@@ -869,57 +871,66 @@ h2,
 
     letter-spacing: .05em;
 }
-h4,
-.h4
-{
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
 h1,
-.h1,
 h2,
-.h2,
-h3,
-.h3
+h3
 {
     margin-top: 21px;
     margin-bottom: 17.5px;
 }
 h1 small,
-.h1 small,
 h2 small,
-.h2 small,
 h3 small,
-.h3 small,
 h1 .small,
-.h1 .small,
 h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small
+h3 .small
 {
     font-size: 65%;
 }
 h4,
-.h4,
 h5,
-.h5,
-h6,
-.h6
+h6
 {
     margin-top: 10.5px;
     margin-bottom: 10.5px;
 }
 h4 small,
-.h4 small,
 h5 small,
-.h5 small,
 h6 small,
-.h6 small,
 h4 .small,
-.h4 .small,
 h5 .small,
+h6 .small
+{
+    font-size: 75%;
+}
+.h1,
+.h2,
+.h3
+{
+    margin-top: 0;
+    margin-bottom: 17.5px;
+}
+.h1 small,
+.h2 small,
+.h3 small,
+.h1 .small,
+.h2 .small,
+.h3 .small
+{
+    font-size: 65%;
+}
+.h4,
+.h5,
+.h6
+{
+    margin-top: 0;
+    margin-bottom: 10.5px;
+}
+.h4 small,
+.h5 small,
+.h6 small,
+.h4 .small,
 .h5 .small,
-h6 .small,
 .h6 .small
 {
     font-size: 75%;
@@ -2378,7 +2389,7 @@ th
 }
 .table > thead
 {
-    font-family: 'ProximaNova', Georgia, Times, serif;
+    font-family: 'ProximaNova', Helvetica, Arial, sans-serif;
 }
 .table > thead > tr > th
 {
@@ -4518,8 +4529,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .nav > li > a:focus
 {
     text-decoration: none;
-
-    background-color: #bebec1;
 }
 .nav > li.disabled > a
 {
@@ -4554,14 +4563,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 {
     max-width: none;
 }
-.nav-tabs
-{
-    border-bottom: 1px solid #ddd;
-}
 .nav-tabs > li
 {
-    float: left;
-
     margin-bottom: -1px;
 }
 .nav-tabs > li > a
@@ -4569,24 +4572,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn
     line-height: 1.42857143;
 
     margin-right: 2px;
-
-    border: 1px solid transparent;
-    border-radius: 2px 2px 0 0;
-}
-.nav-tabs > li > a:hover
-{
-    border-color: #bebec1 #bebec1 #ddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus
 {
+    font-weight: 600;
+
     cursor: default;
 
-    color: #f5f6f7;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
-    background-color: #fff;
+    color: #111;
 }
 .nav-tabs.nav-justified
 {
