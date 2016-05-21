@@ -73,9 +73,9 @@
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="row">
-				<div class="col-xs-12 col-sm-2 col-md-3">
+				<div class="col-xs-12 col-sm-3 col-md-3">
 					<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -87,11 +87,11 @@
 				</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-10 col-md-9">
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
+				<div class="col-xs-12 col-sm-9 col-md-9">
+					<div class="collapse navbar-collapse" id="menu">
 
 						<ul class="nav navbar-nav">
-							<li><a href="../../artists.html"><span>Художники</span></a></li>
+							<li><a class="active" href="../../artists.html"><span>Художники</span></a></li>
 							<li><a href="../../exhibitions.html"><span>Выставки</span></a></li>
 							<li><a href="../../news.html"><span>Новости</span></a></li>
 							<li><a href="../../press.html"><span>Пресса</span></a></li>
@@ -107,15 +107,15 @@
 				</div><!-- /.col -->
 			</div><!-- /.row -->
 
-		</div><!-- /.container-fluid -->
-	</nav><!-- /.nav -->
+		</div><!-- /.container -->
+	</nav><!-- /.navbar -->
 </header><!-- /.header -->
 
         <main>
         <div class="container">
 	<div class="row">
 
-		<div class="col-xs-12 col-sm-3">
+		<div class="col-xs-12 col-sm-3 mobile--hidden">
 			<div id="navbar-gallery" class="info" data-spy="affix" data-offset-top="0">
 				<ul class="list__pure nav nav-tabs" role="tablist">
 					<li class="active"><a href="#1">О галерее</a></li>
@@ -138,7 +138,7 @@
 			<div class="h3" id="2">Команда</div>
 			<div class="row">
 				
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<div class="team__member">
 						<img src="../../img/images/team/f-serdyuk.jpg" alt="">
 						<div class="h5">Федор Сердюк</div>
@@ -146,7 +146,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<div class="team__member">
 						<img src="../../img/images/team/k-serdyuk.jpg" alt="">
 						<div class="h5">Ксения Сердюк</div>
@@ -154,7 +154,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<div class="team__member">
 						<img src="../../img/images/team/sidorova.jpg" alt="">
 						<div class="h5">Любовь Сидорова</div>
@@ -162,7 +162,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<div class="team__member">
 						<img src="../../img/images/team/podoksik.jpg" alt="">
 						<div class="h5">Вера Подоксик</div>
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<div class="team__member">
 						<img src="../../img/images/team/postnova.jpg" alt="">
 						<div class="h5">Мария Постнова</div>
@@ -189,13 +189,13 @@
 
 				<div class="col-xs-12">
 					<div class="map">
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=S_k_2nRywNzf3IMdyRMHnqXsvWz5jpsx&width=100%&height=400&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=S_k_2nRywNzf3IMdyRMHnqXsvWz5jpsx&width=100%&height=100%&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 					</div>
 				</div>
 
 				<div class="col-xs-12 col-sm-8">
 					<div class="h4 contacts__mail"><a class="link" href="mailto:info@osteon-spb.ru">info@artreflex.ru</a></div>
-					<div class="h2 contacts__phone"><strong><a class="link" href="tel:+74956628888">+7 (812)&nbsp;332-33-43</a></strong></div>
+					<div class="h3 contacts__phone"><strong><a class="link" href="tel:+74956628888">+7 (812)&nbsp;332-33-43</a></strong></div>
 				</div>
 
 				<div class="col-xs-12 col-sm-4 emerge" data-effect="relax" data-duration="500">
@@ -209,26 +209,22 @@
 				<div class="col-xs-12 col-sm-12">
 					<div class="row">
 						<div class="margin__lg">
-							<div class="col-xs-12 col-sm-4">
-								<div class="h4 remain">Адрес</div>
-								<div itemscope itemtype="http://schema.org/Organization">
-									<div class="footer__item--address__info" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-										<p><nobr><span itemprop="streetAddress">проспект Бакунина, д.&nbsp;5</span></nobr>
-										<nobr><span itemprop="addressLocality">Санкт-Петербург, Россия,</span>
-										<span itemprop="postalCode">191024</span></nobr></p>
-									</div>
-								</div>
+							<div class="col-xs-12 col-sm-4 m-margin-2">
+								<div class="h4">Адрес</div>
+									<p><nobr>проспект Бакунина, д.&nbsp;5</nobr>
+									<nobr>Санкт-Петербург, Россия</nobr>
+									191024</p>
 							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="h4 remain">Метро</div>
+							<div class="col-xs-12 col-sm-4 m-margin-2">
+								<div class="h4">Метро</div>
 								<p>Ближайшие станции: </p>
 								<ul class="list__pure">
 									<li>«Пл. Восстания» (15 минут)</li>
 									<li>«Пл. Ал. Невского» (20 минут)</li>
 								</ul>
 							</div>
-							<div class="col-xs-12 col-sm-4">
-								<div class="h4 remain">Наземный транспорт</div>
+							<div class="col-xs-12 col-sm-4 m-margin-2">
+								<div class="h4">Наземный транспорт</div>
 								<ul class="list__pure">
 									<li>Маршрутные такси № к-187, к-185</li>
 									<li>Автобусные маршруты № 27, 46</li>
@@ -303,27 +299,27 @@
         <footer>
 	<div class="container inner">
 		<div class="row">
-			<div class="col-xs-12 col-sm-3">
+			<div class="col-xs-12 col-sm-4 col-md-3">
 				<p>Контактная информация <br>
-				<nobr><span>проспект Бакунина, д.&nbsp;5</span></nobr><br>
-				<nobr><span>Санкт-Петербург, 191024</span></nobr><br>
+				<nobr>проспект Бакунина, д.&nbsp;5</nobr><br>
+				<nobr>Санкт-Петербург, 191024</nobr><br>
 				<a class="link" href="tel:+78123323343">+7 (812)&nbsp;332-33-43</a> <br>
 				<a class="link" href="mailto:info@artreflex.ru">info@artreflex.ru</a></p>
 			</div><!-- /col -->
 
-			<div class="col-xs-12 col-sm-4">
+			<div class="col-xs-12 col-sm-5 col-md-4 mail">
 
 				<p>Подпишитесь на нашу рассылку, чтобы получать анонсы выставок и ярмарок:</p>
 				<form class="form-inline margin">
-	        <div class="form-group">
-	          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane@example.com">
+	        <div class="form-group mail-form">
+	          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="john@doe.com">
 	        </div>
 	        <button type="submit" class="btn btn-default button__email">Подписаться</button>
 	      </form>
 
 			</div>
 
-			<div class="col-xs-12 col-sm-3 col-sm-offset-2 text-right">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-md-offset-2 text-right">
 				<ul class="social-list">
 					<a href="http://vk.com/artreflex2"><li class="social social_vk"></li></a>
 					<a href="https://facebook.com/artreflexgallery/"><li class="social social_fb"></li></a>
@@ -334,13 +330,13 @@
 				
 			</div><!-- /col -->
 
-		<div class="col-sm-12 inner__top">
+		<div class="col-xs-12 inner__top">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6">
-					<p class="small">© 2016 ART re.FLEX Gallery</p>
+				<div class="col-xs-4 col-sm-6">
+					<p class="small">© 2016 <nobr>ART re.FLEX Gallery</nobr></p>
 				</div>
-				<div class="col-xs-12 col-sm-6 text-right">
-					<p class="small">Дизайн и разработка — <a href="">paperdavid</a></p>
+				<div class="col-xs-8 col-sm-6 text-right">
+					<p class="small"><nobr>Дизайн и разработка</nobr> — <a href="">paperdavid</a></p>
 				</div>
 			</div>
 		</div>

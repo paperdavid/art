@@ -1217,10 +1217,29 @@ blockquote
 {
     font-size: 18.75px;
 
+    position: relative;
+
     margin: 0 0 24px;
     padding: 12px 24px;
+    padding-left: 60px;
+}
+blockquote:before
+{
+    font-size: 80px;
+    line-height: 50px;
 
-    border-left: 5px solid #bebec1;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    content: '«';
+
+    opacity: .5;
+}
+blockquote span
+{
+    font-family: 'ProximaNova', Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -5285,7 +5304,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 {
     cursor: default;
 
-    color: rgba(0, 0, 0, .2);
+    color: #adadad;
     border-bottom: none;
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -8448,78 +8467,6 @@ footer
 {
     display: inline-block;
 }
-@media (max-width: 768px)
-{
-    body
-    {
-        font-size: 10px;
-    }
-}
-@media (max-width: 1000px)
-{
-    body
-    {
-        font-size: 10px;
-    }
-}
-@media (max-width: 480px)
-{
-    body
-    {
-        font-size: 14px;
-    }
-}
-footer p
-{
-    font-size: 15px;
-}
-@media (max-width: 768px)
-{
-    footer p
-    {
-        font-size: 9px;
-    }
-}
-@media (max-width: 480px)
-{
-    footer p
-    {
-        font-size: 12px;
-    }
-}
-@media (max-width: 992px)
-{
-    h1,
-    .h1
-    {
-        font-size: 26px;
-    }
-    h2,
-    .h2
-    {
-        font-size: 21px;
-    }
-    h3,
-    .h3
-    {
-        font-size: 17px;
-    }
-    h4,
-    .h4
-    {
-        font-size: 12px;
-    }
-    h5,
-    .h5
-    {
-        font-size: 10px;
-    }
-    h6,
-    .h6
-    {
-        font-size: 8px;
-    }
-}
 .list
 {
     display: block;
@@ -8711,10 +8658,6 @@ body,
 {
     color: #000;
 }
-.carousel-inner > .item > img
-{
-    height: 550px;
-}
 .carousel-inner
 {
     overflow: visible;
@@ -8728,18 +8671,18 @@ body,
 }
 .exhibition-item__grid__cell
 {
-    height: 270px;
+    min-height: 270px;
     margin-bottom: 1em;
 }
 .exhibition-item__grid__cell > a > p
 {
     margin-top: .5em;
 }
-.exhibition-item__grid__cell__img img
-{
-    height: 192px;
-}
 .exhibition-item__grid__cell__img img:hover
+{
+    opacity: .5;
+}
+.artist__img img:hover
 {
     opacity: .5;
 }
@@ -8747,9 +8690,27 @@ body,
 {
     top: 8%;
 }
+.info ul > li.active a:before
+{
+    margin-left: -16px;
+
+    content: '〉';
+}
 .button__email
 {
     margin-left: -5px;
+}
+.mail-form
+{
+    float: left;
+
+    width: 55%;
+}
+.button__email
+{
+    float: left;
+
+    width: 45%;
 }
 .news__item
 {
@@ -8757,6 +8718,8 @@ body,
 }
 .news__item__name
 {
+    line-height: 29px;
+
     margin-top: 4px;
 }
 .news__item__text
@@ -8765,7 +8728,7 @@ body,
 }
 .team__member
 {
-    height: 350px;
+    min-height: 350px;
     margin-bottom: 2em;
 }
 .team__member img
@@ -8789,9 +8752,126 @@ body,
 }
 .map
 {
+    height: 400px;
     margin-bottom: 2em;
 
     border: 1px solid #555;
+}
+.navbar-brand
+{
+    font-family: 'ProximaNova', Helvetica, Arial, sans-serif;
+}
+@media (max-width: 1200px)
+{
+    .navbar-brand
+    {
+        font-size: 16px;
+        line-height: 38px;
+    }
+}
+@media (max-width: 768px)
+{
+    .navbar-brand
+    {
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 480px)
+{
+    .mail
+    {
+        margin-top: 3em;
+    }
+    .social-list
+    {
+        margin-top: 3em;
+
+        text-align: center;
+    }
+    .social
+    {
+        margin-right: 20px;
+    }
+    .navbar-brand
+    {
+        font-size: 20px;
+    }
+    .arrow-right,
+    .arrow-left
+    {
+        top: 45%;
+    }
+    blockquote
+    {
+        font-size: 15px;
+
+        padding-left: 30px;
+    }
+    blockquote:before
+    {
+        font-size: 60px;
+
+        top: 0;
+        left: -5px;
+    }
+    .map
+    {
+        height: 200px;
+    }
+    .remain
+    {
+        margin-bottom: 2em;
+    }
+    .team__member
+    {
+        min-height: 250px;
+    }
+    .team__member p
+    {
+        font-size: 12px;
+    }
+    .m-margin-2
+    {
+        margin-bottom: 2em;
+    }
+    .margin__lg
+    {
+        margin-top: 2em;
+    }
+    .inner
+    {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .mobile--hidden
+    {
+        display: none;
+    }
+}
+@media (max-width: 768px)
+{
+    .inner
+    {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .team__member
+    {
+        min-height: 260px;
+    }
+    .team__member p
+    {
+        font-size: 12px;
+    }
+    .margin__lg
+    {
+        margin-top: 2em;
+    }
+    footer
+    {
+        margin-top: 4em;
+    }
 }
 .chocolat-zoomable.chocolat-zoomed .chocolat-img
 {
