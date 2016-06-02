@@ -61,13 +61,13 @@
 
 @font-size-base:          15px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.7)); // ~12px
+@font-size-small:         ceil((@font-size-base * 0.8)); // ~12px
 @font-size-logo:          ceil((@font-size-base * 1.5)); // ~12px
 
 @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h2:            floor((@font-size-base * 1.7)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.25)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1)); // ~18px
 @font-size-h5:            @font-size-base;
 @font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
 
@@ -159,7 +159,7 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #fff;
-@btn-default-bg:                 #000;
+@btn-default-bg:                 @link-hover-color;
 @btn-default-border:             @btn-default-bg;
 
 @btn-primary-color:              #fff;
@@ -202,7 +202,7 @@
 //** Text color for `<input>`s
 @input-color:                    @gray-darker;
 //** `<input>` border color
-@input-border:                   @text-color;
+@input-border:                   @link-hover-color;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -214,7 +214,7 @@
 @input-border-radius-small:      @border-radius-small;
 
 //** Border color for inputs on focus
-@input-border-focus:             @text-color;
+@input-border-focus:             @link-hover-color;
 
 //** Placeholder text color
 @input-color-placeholder:        #999;
@@ -690,18 +690,18 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-body-padding:          15px;
-@panel-heading-padding:       10px 15px;
+@panel-body-padding:          15px 0;
+@panel-heading-padding:       20px 0;
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
 //** Border color for elements within panels
-@panel-inner-border:          #ddd;
-@panel-footer-bg:             #f5f5f5;
+@panel-inner-border:          transparent;
+@panel-footer-bg:             transparent;
 
-@panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-text:          @text-color;
+@panel-default-border:        transparent;
+@panel-default-heading-bg:    transparent;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;

@@ -214,9 +214,12 @@
 }
 
 .owl-theme .owl-controls {
-    margin-top: 20px;
     text-align: center;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    bottom:50px;
+    left: 0;
+    right: 0;
 }
 
 // .owl-theme .owl-controls .owl-nav [class * =owl-] {
@@ -253,7 +256,8 @@
     width: 10px;
     height: 10px;
     margin: 5px 7px;
-    border: 1px solid @black-underline;
+    background-color: #ccc;
+    box-shadow: 0 voff blur color;
     display: block;
     -webkit-backface-visibility: visible;
     -webkit-transition: opacity 200ms ease;
@@ -267,20 +271,35 @@
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: @text-color-gray;
-    border: 1px solid @text-color-gray;
+    background: #f2f2f2;
+    box-shadow: 0 voff blur color;
 }
 
 
 
-
-.loop {
-  width: 100%;
-  padding: 0 1px;
+.artist .owl-item .item img {
+  margin: 0 auto;
+  max-height: 550px;
+  width: auto;
 }
 
+.owl-item p {
+  text-align: center;
+  margin-top: 10px;
+}
 
-.loop .owl-item img {
-  width: 100%;
-  height: 550px;
+// .artist .owl-stage-outer .owl-stage .owl-item p {
+//   text-align: left;
+//   margin-top: 0;
+// }
+
+// .artist .owl-controls {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
+
+
+.exhibition .owl-item img {
+  margin: 0 auto;
 }
